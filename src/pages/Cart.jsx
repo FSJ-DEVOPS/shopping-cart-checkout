@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
+import CartBody from '../components/Cart/CartBody';
 
 const Cart = () => {
   return (
@@ -19,8 +20,8 @@ const Cart = () => {
           6. Checkout button
           7. Continue shopping button
         */}
-        <h1 className="text-3xl font-medium mb-8 text-center">Cart Page</h1>
-        <p className="text-center text-gray-600">This is a placeholder for the Cart page content.</p>
+        <h1 className="text-3xl font-medium mb-8 text-center">Your Cart</h1>
+        <CartBody />
       </div>
     </Layout>
   );
