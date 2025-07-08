@@ -1,6 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function PaymentOptions() {
+  const nav = useNavigate();
+  function handleNav() {
+    nav("/order-summary");
+  }
   return (
     <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-2xl mx-auto">
       <h2 className="text-lg font-semibold mb-4">Select Payment Method</h2>
@@ -84,7 +90,7 @@ function PaymentOptions() {
           </ul>
         </li>
         <li>
-          <button className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800">
+          <button className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800" onClick={handleNav}>
             Place Order
           </button>
         </li>

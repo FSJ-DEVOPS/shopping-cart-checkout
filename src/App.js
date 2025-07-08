@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Cart from './pages/Cart';
 import PaymentPage from './pages/PaymentPage';
 import Wishlist from './pages/Wishlist';
+import Order from './pages/Order';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/order-summary" element={<Order />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
