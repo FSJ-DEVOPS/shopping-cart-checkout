@@ -31,6 +31,7 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <Link to="/wishlist" className="hover:text-gray-500">WISHLIST</Link>
           <Link to="/cart" className="hover:text-gray-500">CART</Link>
+          <Link to="/login" className="hover:text-gray-500">LOGIN</Link>
         </div>
       </div>
     </header>
