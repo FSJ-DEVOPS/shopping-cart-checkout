@@ -10,6 +10,7 @@ import Cart from './pages/Cart';
 import PaymentPage from './pages/PaymentPage';
 import Wishlist from './pages/Wishlist';
 import Order from './pages/Order';
+import AuthPage from './pages/AuthPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/order-summary" element={<Order />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/login" element={<AuthPage />} />
       </Routes>
     </Router>
   );
